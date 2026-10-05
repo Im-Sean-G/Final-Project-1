@@ -14,6 +14,10 @@
       content="Streamr | Everything you wanted to know about your favorite movies"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e8cebabe41.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="app">
@@ -36,17 +40,20 @@
           </div>
           <div class="landing__subheader">
             <p>
-              Everything you wanted to know <br>about your
+              Everything you wanted to know <br />about your
               <span class="purple">favorite movies</span>
             </p>
           </div>
           <div class="search">
-            <input class="search__input"
+            <input
+              class="search__input"
               type="text"
               placeholder="Search for a movie..."
               id="search-input"
             />
-            <button class="search__button">Search</button>
+            <button class="search__button not__loading" type="button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </div>
           <div class="movie__image">
             <img
@@ -57,5 +64,9 @@
         </div>
       </section>
     </div>
+     <footer>
+      <p>&copy; 2024 Streamr. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
