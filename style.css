@@ -1,0 +1,138 @@
+html,
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.purple {
+  color: #6c61f5;
+}
+
+h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #6c61f5;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav__links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 12px;
+}
+
+.nav__links a {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 4px;
+  transition: color 300ms ease;
+}
+
+.nav__links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.82);
+  transition: width 300ms ease;
+}
+
+.nav__links a:hover,
+.nav__links a:focus {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.nav__links a:hover::after,
+.nav__links a:focus::after {
+  width: 100%;
+}
+
+.landing__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+}
+
+.landing__header {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.landing__subheader {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.search__input {
+  width: 100%;
+  max-width: 480px;
+  padding: 8px;
+  font-size: 1rem;
+  color: #6c61f5;
+  border: 1px solid #6c61f5;
+  border-radius: 50px;
+  outline: none;
+}
+
+.search__button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #6c61f5;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 2px 2px 14px rgba(32, 3, 83, 0.3);
+}
+
+.movie__image {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+
+.movie__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
