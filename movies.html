@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="movies-page-body">
     <div class="movies__nav">
       <div class="nav">
         <div class="logo">
@@ -28,6 +28,8 @@
           </ul>
         </div>
       </div>
+    </div>
+    <section id="movies-page">
       <div class="search__header">
         <h2 class="search__header-title">Search for your favorite movies:</h2>
         <div class="search">
@@ -42,14 +44,11 @@
           </button>
         </div>
       </div>
-    </div>
-
-    <section id="movies-page">
-      <div class="movies__wrapper">
-        <div class="movies__grid" id="movies-grid"></div>
-      </div>
     </section>
-    <footer>
+    <div class="movies__wrapper">
+      <div class="movies__grid" id="movies-grid"></div>
+    </div>
+    <footer class="movies__footer">
       <p>&copy; 2024 Streamr. All rights reserved.</p>
     </footer>
     <script src="index.js"></script>
