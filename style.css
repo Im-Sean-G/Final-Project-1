@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .movies-page-body {
@@ -101,6 +102,10 @@ p {
   width: 100%;
 }
 
+.nav__links .b {
+  cursor: not-allowed;
+}
+
 #landing-page {
    height: calc(92vh - 80px);
 }
@@ -121,14 +126,14 @@ p {
 
 .landing__subheader {
   font-size: 2rem;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .search {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 16px 0;
+  margin: 16px 0 24px 0;
 }
 
 .search__input {
