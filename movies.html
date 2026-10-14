@@ -46,10 +46,29 @@
       </div>
     </section>
     <div class="movies__wrapper">
+      <div class="movies__toolbar">
+        <label for="movie-sort">Sort by</label>
+        <select id="movie-sort">
+          <option value="title">Title (A-Z)</option>
+          <option value="year">Year (newest)</option>
+          <option value="year-oldest">Year (oldest)</option>
+          <option value="rating">IMDb rating (highest)</option>
+          <option value="rating-lowest">IMDB Rating (lowest)</option>
+    </select>
+  </div>
       <div class="movies__grid" id="movies-grid"></div>
     </div>
-    <footer class="movies__footer">
-      <p>&copy; 2024 Streamr. All rights reserved.</p>
+    <footer class="footer">
+      <div class="footer__links--wrapper">
+        <ul class="footer__links">
+          <li><a class="footer__link" href="index.html">Home</a></li>
+          <li><a class="footer__link" href="movies.html">Movies</a></li>
+          <li><a class="footer__link b" href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        &copy; 2024 Streamr. All rights reserved.
+      </div>
     </footer>
     <script src="index.js"></script>
   </body>
