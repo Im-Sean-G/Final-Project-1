@@ -7,18 +7,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
-}
-
-.movies-page-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: url("movies-background.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .purple {
@@ -315,7 +303,7 @@ p {
 }
 
 .movie__image {
-  max-width: min(360px, 30svh);
+  max-width: min(360px, 40svh);
   width: 100%;
   margin: 20px;
   padding: 4px 0;
@@ -332,16 +320,28 @@ p {
   background-color: rgba(108, 97, 245, 0.8);
 }
 
+.movies-page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("movies-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .movies__wrapper {
   flex: 1;
   width: 100%;
-  max-width: 1100px;
   margin: 0 auto;
   background-color: #fff;
 }
 
 .movies__grid {
   min-height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
@@ -478,4 +478,21 @@ p {
   text-align: center;
   background-color: #6c61f5;
   color: #fff;
+}
+
+/* Responsiveness */
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+  h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
 }
